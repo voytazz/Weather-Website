@@ -101,6 +101,7 @@
     justify-content: space-between;
     flex-direction: column;
     overflow: hidden;
+    box-shadow: 0 0px 50px 30px #888888;
     
 }
 
@@ -221,8 +222,14 @@ h1 {
     align-items: center;
     font-size:1.8rem;
     
-    
 }
+
+.mistAnimation {
+    background: url(../images/mistAnimation.png);
+    width:500px;
+    height:500px;
+}
+
 
 @media only screen and (max-width: 700px) {
     .searchCity {

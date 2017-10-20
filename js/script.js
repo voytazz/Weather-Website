@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (response.weather[0].description == "broken clouds") {
             weatherIcon.html('<img id="theImg" src="images/cloudy.png" />')
             todayBg.css("background","url('./images/fewclouds.png') no-repeat center/cover")
+            
         } 
         
         else if (response.weather[0].description == "scattered clouds"){
@@ -94,6 +95,18 @@ document.addEventListener("DOMContentLoaded", function () {
         else if (response.weather[0].description == "mist") {
             weatherIcon.html('<img id="theImg" src="images/cloudy.png" />')
             todayBg.css("background","url('./images/mist.jpg') no-repeat center/cover")
+            firstDiv.css("color", "red")
+            todayBg.css("opacity", "0.8")
+        }
+          else if (response.weather[0].description == "fog") {
+            weatherIcon.html('<img id="theImg" src="images/cloudy.png" />')
+            todayBg.css("background","url('./images/mist.jpg') no-repeat center/cover")
+              firstDiv.css("color", "#404040")
+              todayBg.css("opacity", "0.9")
+        }
+           else if (response.weather[0].description == "rain") {
+            weatherIcon.html('<img id="theImg" src="images/cloudy.png" />')
+            todayBg.css("background","url('./images/rain.jpg') no-repeat center/cover")
         }
         
         else {
