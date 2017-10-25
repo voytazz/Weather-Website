@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
         else if (response.weather[0].description == "mist") {
             weatherIcon.html('<img id="theImg" src="images/cloudy.png" />')
             todayBg.css("background","url('./images/mist.jpg') no-repeat center/cover")
-            firstDiv.css("color", "red")
+            firstDiv.css("color", "darkblue")
             todayBg.css("opacity", "0.8")
         }
           else if (response.weather[0].description == "fog") {
