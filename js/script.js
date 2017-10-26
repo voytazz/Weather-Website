@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function loadWeather() {
         var cityName = cityInput.val();
 
-        var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?q='+cityName+'&units=metric&appid=dbe98c6eabaf54fa682fbca51cdedf80';
+        var weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?q='+cityName+'&units=metric&appid=dbe98c6eabaf54fa682fbca51cdedf80';
         
          $.ajax({
             url: weatherUrl
